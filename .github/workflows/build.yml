@@ -35,7 +35,7 @@ jobs:
           additionalArguments: '/updateprojectfiles /overrideconfig "mode=Mainline"'
 
       - name: Build (Release)
-        run: dotnet build . --configuration Release -p:Version=$GitVersion_SemVer
+        run: dotnet build VRising.ModTemplatePlus.sln --configuration Release -p:Version=$GitVersion_SemVer
 
       - name: Package Nuget
         run: dotnet pack --configuration Release -p:Version=$GitVersion_SemVer --output ./nuget
