@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "templatepack", "templatepack.csproj", "{E961D777-B49E-4926-B43E-305469D538E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{3F99C0DE-2119-41D9-A467-69E91E72D3D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscRoller", "templates\VRising.ModTemplatePlus\DiceRoller.csproj", "{455C0D7E-052E-47FD-8946-64AC74EA725F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E961D777-B49E-4926-B43E-305469D538E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E961D777-B49E-4926-B43E-305469D538E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E961D777-B49E-4926-B43E-305469D538E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E961D777-B49E-4926-B43E-305469D538E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455C0D7E-052E-47FD-8946-64AC74EA725F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455C0D7E-052E-47FD-8946-64AC74EA725F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455C0D7E-052E-47FD-8946-64AC74EA725F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455C0D7E-052E-47FD-8946-64AC74EA725F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{455C0D7E-052E-47FD-8946-64AC74EA725F} = {3F99C0DE-2119-41D9-A467-69E91E72D3D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {851DAEBC-CE89-4755-89A5-4884CB9F67F4}
+	EndGlobalSection
+EndGlobal

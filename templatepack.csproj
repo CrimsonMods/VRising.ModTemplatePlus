@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageId>VRising.ModTemplate</PackageId>
-    <Title>V Rising Mod Templates</Title>
-    <Authors>deca</Authors>
-    <Description>Template for creating V Rising mods with BepInEx.</Description>
+    <PackageId>VRising.ModTemplatePlus</PackageId>
+    <Title>V Rising Mod Template Extended</Title>
+    <Authors>CrimsonMods</Authors>
+    <Description>Extended Template for creating V Rising mods with BepInEx.</Description>
     <PackageTags>vrising</PackageTags>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>

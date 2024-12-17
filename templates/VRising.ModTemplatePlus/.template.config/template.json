@@ -1,19 +1,19 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "deca",
+  "author": "CrimsonMods",
   "classifications": [
     "VRising",
     "Plugin"
   ],
   "generatorVersions": "[1.0.0.0-*)",
-  "identity": "VRising.ModTemplate",
-  "name": "Starter project for V Rising mods",
-  "shortName": "vrisingmod",
+  "identity": "VRising.ModTemplatePlus",
+  "name": "An extended starter project for V Rising mods",
+  "shortName": "vrisingmodplus",
   "tags": {
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "MOUTHWASH",
+  "sourceName": "DiceRoller",
   "preferNameDirectory": true,
   "preferDefaultName": false,
   "defaultName": "MyFirstVRisingMod",
@@ -34,7 +34,7 @@
       "isRequired": false,
       "description": "Description of ",
       "replaces": "My first plugin",
-      "defaultValue": "Created with VRising.ModTemplate, you should edit this."
+      "defaultValue": "Created with VRising.ModTemplatePlus, you should edit this."
     },
     "UseBloodstone": {
       "type": "parameter",
@@ -42,15 +42,31 @@
       "isRequired": false,
       "description": "To automatically setup and use Bloodstone.",
       "defaultValue": "false",
-      "displayName": "Use Bloodstone"
+      "displayName": "UseBloodstone"
     },
-    "UseVCF": {
+    "UseBloodyCore": {
       "type": "parameter",
       "datatype": "bool",
       "isRequired": false,
-      "description": "To automatically setup and use VampireCommandFramework.",
+      "description": "To automatically setup and use Bloody.Core.",
       "defaultValue": "false",
-      "displayName": "Use VCF"
+      "displayName": "UseBloodyCore"
+    },
+    "UseVamp": {
+      "type": "parameter",
+      "datatype": "bool",
+      "isRequired": false,
+      "description": "To automatically setup and use VAMP.",
+      "defaultValue": "false",
+      "displayName": "UseVamp"
+    },
+    "HOWTO": {
+      "type": "parameter",
+      "datatype": "bool",
+      "isRequired": false,
+      "description": "Inserts tutorial-like logic into the template for learning modding",
+      "defaultValue": "false",
+      "displayName": "HOW-TO"
     }
   }
 }
