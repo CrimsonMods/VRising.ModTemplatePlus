@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore VRising.ModTemplatePlus.sln
 
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.9.7
