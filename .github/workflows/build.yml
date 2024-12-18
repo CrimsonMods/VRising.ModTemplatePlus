@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Restore dependencies
-        run: dotnet restore VRising.ModTemplatePlus.sln
+        run: dotnet restore 
 
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.9.7
@@ -35,10 +35,10 @@ jobs:
           additionalArguments: '/updateprojectfiles /overrideconfig "mode=Mainline"'
 
       - name: Build (Release)
-        run: dotnet build VRising.ModTemplatePlus.sln --configuration Release -p:Version=$GitVersion_SemVer
+        run: dotnet build --configuration Release -p:Version=$GitVersion_SemVer
 
       - name: Package Nuget
-        run: dotnet pack VRising.ModTemplatePlus.csproj --configuration Release -p:Version=$GitVersion_SemVer --output ./nuget
+        run: dotnet pack --configuration Release -p:Version=$GitVersion_SemVer --output ./nuget
       
       - name: Upload a Build Artifact
         if: ${{ !env.ACT }}
