@@ -16,7 +16,7 @@
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="VRising.Unhollowed.Client" Version="1.0.*" />
     <PackageReference Include="VRising.VampireCommandFramework" Version="0.9.*" />
-    <PackageReference Condition="'$(UseBloodstone)' == 'true'" Include="VRising.Bloodstone" Version="0.2.*" />
+    <PackageReference Condition="'$(UseBloodstone)' == 'true' || '$(UseBloodyCore)' == 'true'" Include="VRising.Bloodstone" Version="0.2.*" />
     <PackageReference Condition="'$(UseBloodyCore)' == 'true'" Include="Bloody.Core" Version="1.2.*" />
     <PackageReference Condition="'$(UseVamp)' == 'true'" Include="VRising.VAMP" Version="1.*.*" />
   </ItemGroup>

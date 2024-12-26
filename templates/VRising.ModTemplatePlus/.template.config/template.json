@@ -66,7 +66,7 @@
       "isRequired": false,
       "description": "Inserts tutorial-like logic into the template for learning modding",
       "defaultValue": "false",
-      "displayName": "HOW-TO"
+      "displayName": "HowTo"
     }
   }
 }
