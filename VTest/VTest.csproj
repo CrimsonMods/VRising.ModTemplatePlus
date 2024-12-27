@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>DiceRoller</AssemblyName>
+    <AssemblyName>VTest</AssemblyName>
     <Description>Roll dice in local chat to resolve disputes!</Description>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
-    <RootNamespace>DiceRoller</RootNamespace>
+    <RootNamespace>VTest</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,23 +16,17 @@
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="VRising.Unhollowed.Client" Version="1.0.*" />
     <PackageReference Include="VRising.VampireCommandFramework" Version="0.9.*" />
-    <PackageReference Condition="'$(UseBloodstone)' == 'true' || '$(UseBloodyCore)' == 'true'" Include="VRising.Bloodstone" Version="0.2.*" />
-    <PackageReference Condition="'$(UseBloodyCore)' == 'true'" Include="Bloody.Core" Version="1.2.*" />
-    <!--<PackageReference Condition="'$(UseVamp)' == 'true'" Include="VRising.VAMP" Version="1.*.*" /> -->
+    <!--<PackageReference Include="VRising.VAMP" Version="1.*.*" /> -->
   </ItemGroup>
 
-  <!-- You can safely delete these two ItemGroups.-->
-  <ItemGroup Condition="'$(HOWTO)' == 'false'">
+  <ItemGroup>
     <Compile Remove="Commands/DiceCommands.cs" />
     <Compile Remove="Services/DiceService.cs" />
-    <None Remove="Commands/**" />
-    <None Remove="Services/**" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(UseVamp)' == 'true'">
+  <ItemGroup>
     <Compile Remove="Core.cs" />
     <Compile Remove="Extensions.cs" />
     <Compile Remove="Patches/InitializationPatch.cs" />
-    <None Include="Patches/**" />
   </ItemGroup>
 </Project>
