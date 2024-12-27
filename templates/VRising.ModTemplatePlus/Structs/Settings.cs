@@ -25,12 +25,21 @@ public readonly struct Settings
 
     public static void InitConfig()
     {
-        ToggleMod = InitConfigEntry(OrderedSections[0], "Toggle", true,
+
+#if (UseVamp)
+        ToggleMod = SettingsUtil.InitConfigEntry(OrderedSections[0], "Toggle", true,
             "If true the mod will be usable; otherwise it will be disabled.");
 
+        SettingsUtil.ReorderConfigSections();
+#else
+        ToggleMod = InitConfigEntry(OrderedSections[0], "Toggle", true,
+                "If true the mod will be usable; otherwise it will be disabled.");
+
         ReorderConfigSections();
+#endif
     }
 
+#if (!UseVamp)
     static ConfigEntry<T> InitConfigEntry<T>(string section, string key, T defaultValue, string description)
     {
         // Bind the configuration entry and get its value
@@ -88,4 +97,5 @@ public readonly struct Settings
             }
         }
     }
+#endif
 }
